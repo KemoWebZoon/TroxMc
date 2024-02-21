@@ -1,0 +1,208 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.first_header {
+  background-color: #27292a;
+  color: white;
+}
+.first_header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 170px;
+  align-items: center;
+}
+.first_header span {
+  font-weight: bold;
+  cursor: pointer;
+}
+.first_header span:hover {
+  text-decoration: underline;
+}
+@media (max-width: 571px) {
+  .first_header .container {
+    padding: 15px;
+  }
+}
+.first_header span:hover .pound {
+  display: flex !important;
+}
+.pound {
+  position: absolute;
+  display: none;
+  background-color: white;
+  color: black;
+  flex-direction: column;
+  align-items: end;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: fit-content;
+  font-size: 15px;
+  left: 85%;
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  z-index: 2;
+}
+.pound span:not(:first-child) {
+  border-top: #dfe3e9 1px solid;
+}
+.pound span {
+  font-weight: normal;
+  padding: 15px;
+  padding-right: 105px;
+  padding-left: 15px;
+}
+.pound span:hover {
+  color: #0076e0;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+.active {
+  background-color: #0076e0;
+  color: #eee;
+  width: 21%;
+}
+.active:hover {
+  background-color: #0076e0 !important;
+  color: #eee !important;
+}
+
+/*  517 */
+@media (max-width: 1000px) {
+  .header2 p {
+    display: none;
+  }
+}
+@media (max-width: 1031px) {
+  .active {
+    background-color: #0076e0;
+    color: #eee;
+    width: 40%;
+  }
+  .pound span {
+    padding-right: 35px;
+  }
+}
+@media (max-width: 722px) {
+  .pound {
+    left: 76%;
+  }
+}
+@media (max-width: 517px) {
+  .pound {
+    left: 66%;
+  }
+}
+.header2 {
+  background-color: #fff;
+}
+.header2 .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 150px;
+}
+.header2 p {
+  background-color: #0076e0;
+  color: white;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 6px;
+  opacity: 0.65;
+  margin-top: 40px;
+}
+.nav {
+  background-color: #eee;
+}
+.nav .container {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+}
+.nav a {
+  color: black;
+  text-decoration: none;
+  padding-right: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.welcome {
+  background-image: url("https://cdn.tebex.io/webstore/tebex2020/jumbotron-bg-blue.jpg");
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+.welcome h2 {
+  font-size: 60px;
+}
+.type .container {
+  display: flex;
+  justify-content: space-between;
+}
+.type .commands {
+  margin-left: 200px;
+  margin-top: 40px;
+  background-color: white;
+}
+.type .commands .text h2 {
+  color: #0076e0;
+  text-decoration: underline;
+  letter-spacing: -1px;
+  font-size: 2rem;
+}
+.type .commands .text {
+  padding-bottom: 20px;
+}
+.type .commands .text p {
+  display: inline;
+}
+.type .commands .text .a1234567 {
+  display: inline;
+  color: #0076e0;
+  text-decoration: underline;
+  letter-spacing: -1px;
+}
+.type .commands .command2 {
+  margin-bottom: 70px;
+}
+.type .commands .command2 {
+  margin-bottom: 70px;
+}
+.type .pay {
+  background-color: #eee;
+  margin-right: 100px;
+  padding: 100px;
+  padding-right: 200px;
+  padding-top: 20px;
+}
+@media (max-width: 970px) {
+  .type .container {
+    flex-direction: column;
+    align-items: start;
+    align-content: start;
+    margin: 0;
+  }
+  .type .commands {
+    margin-left: 0;
+  }
+  .type .pay {
+    padding: 5px;
+    margin-right: 0;
+    width: 97%;
+  }
+}
+.type .pay h3 {
+  letter-spacing: -1px;
+  font-size: 1.25rem;
+}
+.type .pay .pay2 {
+  margin-bottom: 100px;
+}
+.type .pay .pay2 .img {
+  display: flex;
+  align-items: center;
+}
+.type .pay .pay2 .img p {
+  margin: 20px;
+}
