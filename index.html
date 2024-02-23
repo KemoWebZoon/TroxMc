@@ -8,15 +8,29 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <title>Troxmc | Welcome</title>
   </head>
-  <body onclick="open1()">
-    <div class="all" onclick="open1()">
+  <body>
+    <div class="all" >
       <div class="first_header">
         <div class="container">
-          <p>Login</p>
-          <span onclick="open1()" id="a12345">
-            USD
-            <i class="fa-solid fa-chevron-down"></i>
-            <div class="pound" onclick="open1()" id="pound">
+          <div class="img">
+            <img src="imgs/Logo.png" alt="" width="50" height="50" />
+          </div>
+          <div class="tz">
+            <!-- <p>Login</p> -->
+            <span class="hover">
+              <i class="fa-solid fa-bars i"></i>
+              <div class="nav">
+                <div class="container">
+                  <a href="#"><p>Home</p></a>
+                  <a href="#"><p>Ranks</p></a>
+                  <a href="#"><p>About</p></a>
+                </div>
+              </div>
+            </span>
+            <span  id="a12345">
+              USD
+              <i class="fa-solid fa-chevron-down"></i>
+            <div class="pound"  id="pound">
                 <span onclick="ChangeMoney('AUD')">AUD</span>
                 <span onclick="ChangeMoney('BRL')">BRL</span>
                 <span onclick="ChangeMoney('CAD')">CAD</span>
@@ -29,31 +43,18 @@
                 <span onclick="ChangeMoney('SEK')">SEK</span>
                 <span onclick="ChangeMoney('USD')">USD</span>
               </div>
-          </span>
-        </div>
-      </div>
-
-      <div class="header2" onclick="open1()">
-        <div class="container">
-          <div class="img">
-            <img src="imgs/Logo.png" alt="" width="125" height="125" />
+            </span>
+            <!-- <p class="a">0 ITEMS FOR 0.00 USD</p> -->
+            <p>Login</p>
           </div>
-          <p>0 ITEMS FOR 0.00 USD</p>
         </div>
       </div>
-      <div class="nav" onclick="open1()">
-        <div class="container">
-          <a href="#"><p>Home</p></a>
-          <a href="#"><p>Ranks</p></a>
-          <a href="#"><p>About</p></a>
-        </div>
-      </div>
-      <div class="welcome" onclick="open1()">
+      <div class="welcome" >
         <div class="container">
           <h2>Welcome</h2>
         </div>
       </div>
-      <div class="type" onclick="open1()">
+      <div class="type" >
         <div class="container">
           <div class="commands">
             <div class="text">
@@ -191,7 +192,7 @@
               <p>> ___</p>
             </div>
           </div>
-          <div class="pay" onclick="open1()">
+          <div class="pay" >
             <div class="pay2">
                 <h3>Welcome</h3>
                 <p>This is TroxMC's main store!</p>
