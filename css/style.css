@@ -9,8 +9,23 @@ body {
 .first_header .container {
   display: flex;
   justify-content: space-between;
-  padding: 0px 170px;
+  padding: 0px 0px;
   align-items: center;
+}
+.first_header .tz {
+  display: flex;
+  align-items: center;
+}
+.first_header .tz span {
+  margin-right: 50px;
+}
+.first_header p.a {
+  background-color: #0076e0;
+  color: white;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 6px;
+  margin-right: 40px;
 }
 .first_header span {
   font-weight: bold;
@@ -19,11 +34,59 @@ body {
 .first_header span:hover {
   text-decoration: underline;
 }
-@media (max-width: 571px) {
+.nav .container {
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  margin-right: 400px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding-right: 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+span.hover .i {
+  display: none;
+}
+@media (max-width: 848px) {
   .first_header .container {
-    padding: 15px;
+    flex-direction: column;
+  }
+  .first_header .tz {
+    display: flex;
+    align-items: center;
+  }
+  .nav a {
+    padding: 0;
+    font-size: 15px;
   }
 }
+@media (max-width: 590px) {
+  span.hover .i {
+    display: block;
+  }
+  .nav a {
+    padding-left: 50px;
+  }
+  .first_header .nav {
+    width: 60px;
+    display: none;
+    position: absolute;
+    background-color: black;
+  }
+  span.hover:hover .nav {
+    display: block;
+    position: absolute;
+  }
+}
+/* @media (max-width: 657px) {
+  .first_header .container .tz {
+    width: 1000px;
+  }
+} */
+/* 657 */
 .first_header span:hover .pound {
   display: flex !important;
 }
@@ -102,30 +165,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 40px 150px;
-}
-.header2 p {
-  background-color: #0076e0;
-  color: white;
-  height: fit-content;
-  padding: 10px;
-  border-radius: 6px;
-  opacity: 0.65;
-  margin-top: 40px;
-}
-.nav {
-  background-color: #eee;
-}
-.nav .container {
-  display: flex;
-  padding: 5px;
-  justify-content: center;
-}
-.nav a {
-  color: black;
-  text-decoration: none;
-  padding-right: 30px;
-  font-weight: 600;
-  font-size: 20px;
 }
 .welcome {
   background-image: url("https://cdn.tebex.io/webstore/tebex2020/jumbotron-bg-blue.jpg");
