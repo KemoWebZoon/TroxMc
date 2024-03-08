@@ -256,3 +256,9 @@ span.hover .i {
 .type .pay .pay2 .img p {
   margin: 20px;
 }
+.none-01 {
+  display: none;
+}
+.command2:hover .none-01 {
+  display: block;
+}
