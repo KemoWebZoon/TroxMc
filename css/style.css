@@ -258,7 +258,26 @@ span.hover .i {
 }
 .none-01 {
   display: none;
+  animation-name: dur;
+  animation-duration: 3s;
 }
 .command2:hover .none-01 {
   display: block;
+  background-color: #fff;
+  color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  opacity: 1;
+}
+@keyframes dur {
+  0% {
+    opacity: 0.5;
+    background-color: #fff;
+    color: #fff;
+  }
+  100% {
+    opacity: 1;
+    background-color: #eee;
+    color: #000;
+  }
 }
