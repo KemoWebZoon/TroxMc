@@ -281,3 +281,36 @@ span.hover .i {
     color: #000;
   }
 }
+.showall:hover .command2:hover .none-01 {
+  display: block;
+  opacity: 1;
+  background-color: #eee;
+  color: #000;
+}
+.none-yes {
+  display: none;
+}
+.show-now:not(.none-yes) {
+  background-color: #eee;
+  color: #000;
+  width: fit-content;
+  padding: 20px;
+  padding-bottom: 30px;
+  opacity: 0.5;
+}
+.show-now:hover .none-yes {
+  display: block;
+  /* position: absolute; */
+  margin-top: 60px;
+  opacity: 1 !important;
+}
+.footer {
+  margin-top: 30px;
+  background-color: #000;
+  color: #fff;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
